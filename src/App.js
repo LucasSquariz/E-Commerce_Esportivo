@@ -4,8 +4,10 @@ import Carrousel from './components/Home/home';
 
 function App() {
   return (
+    <>
     <Header />,
     <Carrousel />
+    </>
   );
 }
 
