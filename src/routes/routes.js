@@ -3,8 +3,6 @@ import Carrinho from '../pages/Carrinho/components/carrinho.js';
 import Home from '../pages/Home/components/home.js';
 import Produtos from '../pages/Produtos/components/produtos.js';
 
-
-
 const RouteList = () => (
   <BrowserRouter>
     

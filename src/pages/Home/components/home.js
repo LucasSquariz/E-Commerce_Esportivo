@@ -29,42 +29,42 @@ function Home() {
             </header>
 
             {/* Carrosel */}
-            <Carousel >
-                <Carousel.Item interval={1500}>
+            <Carousel>
+                <Carousel.Item className="mx-4 " >
                     <Row >
                         <Col>
                             <Link to="/produtos">
-                                <img src="https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg" alt="asdasd" />
+                                <img src="https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg" className="imagem" alt="asdasd" />
                             </Link>
                         </Col>
                         <Col>
                             <Link to="/produtos">
-                                <img src="https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg" alt="asdasd" />
+                                <img src="https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg" className="imagem" alt="asdasd" />
                             </Link>
                         </Col>
                         <Col>
                             <Link to="/produtos">
-                                <img src="https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg" alt="asdasd" />
+                                <img src="https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg" className="imagem" alt="asdasd" />
                             </Link>
                         </Col>
                     </Row>
 
                 </Carousel.Item>
-                <Carousel.Item interval={1500}>
+                <Carousel.Item >
                     <Row>
                         <Col>
                             <Link to="/produtos">
-                                <img src="https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg" alt="asdasd" />
+                                <img src="https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg" className="imagem" alt="asdasd" />
                             </Link>
                         </Col>
                         <Col>
                             <Link to="/produtos">
-                                <img src="https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg" alt="asdasd" />
+                                <img src="https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg" className="imagem" alt="asdasd" />
                             </Link>
                         </Col>
                         <Col>
                             <Link to="/produtos">
-                                <img src="https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg" alt="asdasd" />
+                                <img src="https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg" className="imagem" alt="asdasd" />
                             </Link>
                         </Col>
                     </Row>

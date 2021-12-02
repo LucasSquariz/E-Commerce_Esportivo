@@ -1,8 +1,14 @@
-#carouselExampleControls{
-    width: 100vh;
+.carrosel{
+    width: 90vh;
     height: 100vh;
     display: flex;
-    flex-direction: row;
+    flex-direction:column;
+
+}
+
+.imagem{
+    width: 50vh;
+    margin-left:30px;
 }
 
 .footer{
