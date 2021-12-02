@@ -1,14 +1,10 @@
 import './App.scss';
-import Footer from './pages/Home/components/Footer/footer';
-import Header from './pages/Home/components/Header/header';
-import Carrousel from './pages/Home/components/Home/home';
+import RouteList from './routes/routes';
 
 function App() {
   return (
     <>
-    <Header />,
-    <Carrousel />,
-    <Footer />
+      <RouteList />
     </>
   );
 }
