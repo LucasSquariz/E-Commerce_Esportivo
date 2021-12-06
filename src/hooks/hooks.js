@@ -20,7 +20,7 @@ const Hooks = (url) => {
     }
     loadData();
   }, [url]);
-
+  console.log(data);
   return data;
 }
 
