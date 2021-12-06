@@ -19,8 +19,7 @@ const useAxios = (url) => {
       }
     }
     loadData();
-  }, [url]);
-  console.log(data);
+  }, [url]);  
   return data;
 }
 
