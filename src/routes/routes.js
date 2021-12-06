@@ -8,7 +8,7 @@ const RouteList = () => (
     
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/produtos" element={<Produtos />} />
+      <Route path="/produtos/:produtoId" element={<Produtos />} />
       <Route path="/carrinho" element={<Carrinho />} />
       
       
