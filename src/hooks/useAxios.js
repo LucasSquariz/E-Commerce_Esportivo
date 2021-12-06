@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import Swal from 'sweetalert2';
 import api from '../services/api';
 
-const Hooks = (url) => {
+const useAxios = (url) => {
   const [data, setData] = useState({});
 
   useEffect(() => {
@@ -24,4 +24,4 @@ const Hooks = (url) => {
   return data;
 }
 
-export default Hooks;
+export default useAxios;

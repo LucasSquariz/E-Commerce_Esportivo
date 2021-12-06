@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-
-import Hooks from '../../../hooks/hooks.js';
+import useAxios from '../../../hooks/useAxios.js';
 import './produtos.scss';
 import { Helmet } from 'react-helmet';
 import { Navbar, Container, Nav, Col, Row } from 'react-bootstrap';
@@ -9,7 +8,7 @@ import { useParams } from 'react-router';
 
 function Produtos() {   
     const {produtoId} = useParams();
-    const produto = Hooks(`/produto/${produtoId}`);
+    const produto = useAxios(`/produto/${produtoId}`);
     return (
         <>
         
@@ -34,8 +33,7 @@ function Produtos() {
 
             {/* Produto */}
 
-            <Container className="produto">
-                console.log(produtoId);
+            <Container className="produto">                
                 <p>Imagem</p>
                 <p>Nome:{produto}</p>                
                 <p>Categoria</p>
