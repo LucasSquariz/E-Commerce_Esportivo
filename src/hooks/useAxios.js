@@ -3,7 +3,7 @@ import Swal from 'sweetalert2';
 import api from '../services/api';
 
 const useAxios = (url) => {
-  const [data, setData] = useState({});
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     async function loadData() {
@@ -12,9 +12,9 @@ const useAxios = (url) => {
         setData(response.data);
       } catch (error) {
         Swal.fire({
-          title: error.response.status,
+          title: 'error.response.status',
           icon: 'error',
-          text: error.response.data.message
+          text: 'error.response.data.message'
         })
       }
     }

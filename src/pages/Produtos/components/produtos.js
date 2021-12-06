@@ -9,6 +9,7 @@ import { useParams } from 'react-router';
 function Produtos() {   
     const {produtoId} = useParams();
     const produto = useAxios(`/produto/${produtoId}`);
+    console.log(produtoId.nome);
     return (
         <>
         
@@ -35,8 +36,8 @@ function Produtos() {
 
             <Container className="produto">                
                 <p>Imagem</p>
-                <p>Nome:{produto}</p>                
-                <p>Categoria</p>
+                <p>Nome:{produtoId.nome}</p>                
+                <p>Categoria</p>                
                 <p>Descrição</p>
                 <p>Avaliação</p>
                 <p>Preço</p>
