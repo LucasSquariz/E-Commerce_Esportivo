@@ -8,11 +8,9 @@ import { useParams } from 'react-router';
 
 function Produtos() {   
     const {produtoId} = useParams();
-    const produto = useAxios(`/produto/${produtoId}`);
-    console.log(produtoId.nome);
+    const produto = useAxios(`/produto/${produtoId}`);    
     return (
-        <>
-        
+        <>        
             {/* Nome da página */}
             <Helmet>
                 <title>CTD Commerce | Produtos</title>
@@ -26,7 +24,7 @@ function Produtos() {
                         <Nav className="me-auto">                            
                             <Nav.Link href="/produtos">Produtos</Nav.Link>
                             <Nav.Link href="/carrinho">Carrinho</Nav.Link>
-                            <Nav.Link href="#footer.container">Sobre nós</Nav.Link>
+                            <Nav.Link href="#footer">Sobre nós</Nav.Link>
                         </Nav>
                     </Container>
                 </Navbar>
@@ -35,12 +33,10 @@ function Produtos() {
             {/* Produto */}
 
             <Container className="produto">                
-                <p>Imagem</p>
-                <p>Nome:{produtoId.nome}</p>                
-                <p>Categoria</p>                
-                <p>Descrição</p>
-                <p>Avaliação</p>
-                <p>Preço</p>
+            <img src= {produto.imagem} className="imagem" alt="asdasd" />
+                <p>Nome: {produto.nome}</p>                                
+                <p>Descrição: {produto.descricao}</p>                
+                <p>Preço: {produto.preco}</p>
             </Container>
 
             {/* Footer */}

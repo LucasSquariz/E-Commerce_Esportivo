@@ -1,12 +1,16 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import useAxios from '../../../hooks/useAxios.js';
 import { Helmet } from 'react-helmet';
 import { Navbar, Container, Nav, Carousel, Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { useParams } from 'react-router';
 import './home.scss';
 
 
 function Home() {
+    const {produtoId} = useParams();
+    const produto = useAxios(`/produto/${produtoId}`);
     return (
         <>
             {/* Nome da página */}
@@ -22,7 +26,7 @@ function Home() {
                         <Nav className="me-auto">                            
                             <Nav.Link href="/produtos">Produtos</Nav.Link>
                             <Nav.Link href="/carrinho">Carrinho</Nav.Link>
-                            <Nav.Link href="#footer.container">Sobre nós</Nav.Link>
+                            <Nav.Link href="#footer">Sobre nós</Nav.Link>
                         </Nav>
                     </Container>
                 </Navbar>
@@ -33,17 +37,17 @@ function Home() {
                 <Carousel.Item className="mx-4 " >
                     <Row >
                         <Col>
-                            <Link to="/produtos">
+                            <Link to="/produto/2">
+                                <img src="https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg" className="imagem" alt={produto.imagem} />
+                            </Link>
+                        </Col>
+                        <Col>
+                            <Link to="/produto/1">
                                 <img src="https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg" className="imagem" alt="asdasd" />
                             </Link>
                         </Col>
                         <Col>
-                            <Link to="/produtos">
-                                <img src="https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg" className="imagem" alt="asdasd" />
-                            </Link>
-                        </Col>
-                        <Col>
-                            <Link to="/produtos">
+                            <Link to="/produto/1">
                                 <img src="https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg" className="imagem" alt="asdasd" />
                             </Link>
                         </Col>
@@ -53,17 +57,17 @@ function Home() {
                 <Carousel.Item >
                     <Row>
                         <Col>
-                            <Link to="/produtos">
+                            <Link to="/produto/1">
                                 <img src="https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg" className="imagem" alt="asdasd" />
                             </Link>
                         </Col>
                         <Col>
-                            <Link to="/produtos">
+                            <Link to="/produto/1">
                                 <img src="https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg" className="imagem" alt="asdasd" />
                             </Link>
                         </Col>
                         <Col>
-                            <Link to="/produtos">
+                            <Link to="/produto/1">
                                 <img src="https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg" className="imagem" alt="asdasd" />
                             </Link>
                         </Col>
