@@ -5,17 +5,20 @@ import Produtos from '../pages/Produtos/components/produtos.js';
 import { HelmetProvider } from 'react-helmet-async';
 import Header from '../components/header';
 import Footer from '../components/footer';
+import CarrinhoContext from '../contexts/CarrinhoContext'
 
 const RouteList = () => (
   <BrowserRouter>
     <HelmetProvider>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/produto/:produtoId" element={<Produtos />} />
-        <Route path="/carrinho" element={<Carrinho />} />
-      </Routes>
-      <Footer />
+      <CarrinhoContext>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/produto/:produtoId" element={<Produtos />} />
+          <Route path="/carrinho" element={<Carrinho />} />
+        </Routes>
+        <Footer />
+      </CarrinhoContext>
     </HelmetProvider>
   </BrowserRouter>
 );
