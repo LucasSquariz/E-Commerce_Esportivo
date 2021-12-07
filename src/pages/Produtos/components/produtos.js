@@ -2,18 +2,19 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import useAxios from '../../../hooks/useAxios.js';
 import './produtos.scss';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { Navbar, Container, Nav, Col, Row } from 'react-bootstrap';
 import { useParams } from 'react-router';
 
 function Produtos() {   
     const {produtoId} = useParams();
-    const produto = useAxios(`/produto/${produtoId}`);    
+    const produto = useAxios(`/produto/${produtoId}`);  
+    
     return (
         <>        
             {/* Nome da página */}
             <Helmet>
-                <title>CTD Commerce | Produtos</title>
+                <title>CTD Commerce | Produto</title>
             </Helmet>
 
              {/* Navbar */}
@@ -31,7 +32,6 @@ function Produtos() {
             </header>
 
             {/* Produto */}
-
             <Container className="produto">                
             <img src= {produto.imagem} className="imagem" alt="asdasd" />
                 <p>Nome: {produto.nome}</p>                                
