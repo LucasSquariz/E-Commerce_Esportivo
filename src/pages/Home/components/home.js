@@ -9,8 +9,7 @@ import './home.scss';
 
 
 function Home() {
-    const {produtoId} = useParams();
-    const produto = useAxios(`/produto/${produtoId}`);
+    const produto = useAxios(`/produto`);
     return (
         <>
             {/* Nome da página */}
@@ -20,7 +19,7 @@ function Home() {
             
             {/* Carrosel */}
             <Carousel>
-                <Carousel.Item className="mx-4 " >
+                <Carousel.Item className="mx-4">
                     <Row >
                         <Col>
                             <Link to="/produto/1">

@@ -13,7 +13,7 @@ const CarrinhoContextProvider = ({ children }) => {
     localStorage.setItem('produto', JSON.stringify(produto));
   }, [produto]);
 
-  const addProduto = (produto) => dispatch({ type: 'ADD_produt', payload: produto });
+  const addProduto = (produto) => dispatch({ type: 'ADD_PRODUTO', payload: produto });
 
   return (
     <CarrinhoContext.Provider value={{ produto, addProduto }}>

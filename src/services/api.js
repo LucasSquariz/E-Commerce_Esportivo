@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:8080'
+  baseURL: 'http://ctdcommerce-env.eba-pu3csziq.us-east-1.elasticbeanstalk.com/'
 });
 
 export default api;
