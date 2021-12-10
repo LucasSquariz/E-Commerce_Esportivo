@@ -2,7 +2,7 @@
   "name": "checkpoint-final",
   "version": "0.1.0",
   "private": true,
-  "proxy": "ctdcommerce-env.eba-pu3csziq.us-east-1.elasticbeanstalk.com/",
+  "proxy": "https://backendinfra.herokuapp.com/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^11.2.7",
