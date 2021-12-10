@@ -10,14 +10,14 @@ const ListaProdutos = () => {
       <Container key={produto.id} >
           <Container className="produtos">                
             <img src={produto.imagem} className="imagem" alt={produto.nome} />
-                <p>Nome: {produto.nome}</p>                                
-                <p>Descrição: {produto.descricao}</p>                
-                <p>Preço: R${produto.preco}</p>                
-            </Container> 
+            <p>Nome: {produto.nome}</p>                                
+            <p>Descrição: {produto.descricao}</p>                
+            <p>Preço: R${produto.preco}</p>                
+          </Container> 
         </Container>
     ))
   ) : (
-    <p>Não há produtos</p>
+    <h1>Nenhum produto no carrinho</h1>
   )
 }
 

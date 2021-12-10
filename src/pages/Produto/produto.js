@@ -29,7 +29,7 @@ function Produto() {
 
             {/* Produto */}
             <Container className="produto">                
-            <img src={produto.imagem} className="imagem" alt={produto.nome} />
+                <img src={produto.imagem} className="imagem" alt={produto.nome} />
                 <p>Nome: {produto.nome}</p>                                
                 <p>Descrição: {produto.descricao}</p>                
                 <p>Preço: R${produto.preco}</p>
