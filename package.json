@@ -2,7 +2,7 @@
   "name": "checkpoint-final",
   "version": "0.1.0",
   "private": true,
-  "proxy": "Ctdcommerce-env.eba-pu3csziq.us-east-1.elasticbeanstalk.com/",
+  "proxy": "https://Ctdcommerce-env.eba-pu3csziq.us-east-1.elasticbeanstalk.com/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^11.2.7",
