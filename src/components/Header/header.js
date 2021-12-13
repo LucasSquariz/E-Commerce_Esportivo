@@ -23,7 +23,7 @@ function Header() {
                 Todos os Produtos
             </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link as={Link} to="/categoria">Categorias</Nav.Link>
+            <Nav.Link as={Link} to="/produtos/categoria">Categorias</Nav.Link>
             <Nav.Link as={Link} to="/sobre">Sobre nós</Nav.Link>
             </Nav>
             <Nav.Link as={Link} to="/carrinho"><img src="https://www.freeiconspng.com/thumbs/shopping-cart-icon/shopping-cart-icon-2.png" id="carrinho" alt="carrinho" /></Nav.Link>
