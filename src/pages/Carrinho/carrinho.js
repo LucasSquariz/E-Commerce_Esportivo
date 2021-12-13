@@ -11,11 +11,11 @@ function Carrinho() {
         <>
             {/* Nome da página */}
             <Helmet>
-                <title>CTD Commerce | Carrinho</title>
+                <title>SPORT STORE | Carrinho</title>
             </Helmet>
 
             <Container>
-                       <Listaprodutos />    
+                    <Listaprodutos />    
             </Container>            
         </>
     )

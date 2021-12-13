@@ -1,16 +1,22 @@
-.carrosel{
-    width: 90vh;
-    height: 100vh;
-    display: flex;
-    flex-direction:column;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+h1 {
+    font-family: 'Poppins', sans-serif;
 }
 
 .imagem{
-    width: 50vh;
-    margin-left:30px;
+    width: 90%;
+    margin:5px;
 }
 
-.footer{
-    background-color: #000000;    
+.carouselClass {
+    margin-bottom: 2em;
+    padding: 1em 0 ;
+    margin: 0 2em;
+
+    .carItemClass{
+        margin-top: 20px;
+        width: 100%;
+    }
+
 }

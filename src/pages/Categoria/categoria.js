@@ -1,18 +1,27 @@
 import useAxios from '../../hooks/useAxios';
 import { useParams } from 'react-router';
 import { Helmet } from 'react-helmet-async';
-import { Container } from 'react-bootstrap';
+import { Container, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 function Categorias() {
     const {categoria} = useParams();
-    const categorias = useAxios(`/produtos/categoria/${categoria}`);       
+    const categorias = useAxios(`/produtos/${categoria}`);       
     return (
         <>
-        {/* Nome da página */ }
+        {/* Nome da página */ 
         < Helmet >
-            <title>CTD Commerce | Categorias</title>
+            <title>SPORT STORE | categoria</title>
         </Helmet > 
+}
+        {/* Botões para as categorias */
+        <Container>
+            <Container.Item className="ctg"><p>Categorias</p></Container.Item>
+                <Link to={`/produtos/categoria/1`}><Button variant="primary">Bermudas</Button></Link>
+                <Link to={`/produtos/categoria/2`}><Button variant="primary">Tênis</Button></Link>
+                <Link to={`/produtos/categoria/3`}><Button variant="primary">Camisas</Button></Link>                
+            </Container>
+        }
         {categorias.length !== 0 && (
                 categorias.map((produto) => {
                     return (
@@ -24,7 +33,7 @@ function Categorias() {
                         </Container>
 
                     )
-                })
+                }) 
 
             )}
         </>

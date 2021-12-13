@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.produto {
+  max-width: fit-content;
+  padding: 10px;
+  margin: 20px;
+}
+
+.imagem {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.oi {
+  margin-top: 50px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
