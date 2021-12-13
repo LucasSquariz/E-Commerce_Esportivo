@@ -1,7 +1,6 @@
 import { Navbar, Container, Nav, NavDropdown, } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './header.scss';
-import logo from 'https://bit.ly/3oP1hfV';
 
 function Header() {
     return (
@@ -10,7 +9,7 @@ function Header() {
             <header className="sticky-top">
             <Navbar bg="light" style={{ color: "#000" }} expand="lg">   
             <Container className="head">
-            <img src={logo} id="logo-camisa" alt="logo"/>
+            <img src="https://bit.ly/3oP1hfV" id="logo-camisa" alt="logo"/>
             <Navbar.Brand id="nome" href="/">SPORT STORE</Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
