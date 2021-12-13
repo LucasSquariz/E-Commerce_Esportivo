@@ -2,6 +2,7 @@ import useAxios from '../../hooks/useAxios.js';
 import { Container, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 
 function Produtos() {
@@ -9,6 +10,10 @@ function Produtos() {
     const navigate = useNavigate();
     return (
         <>        
+        {/* Nome da página */}
+        <Helmet>
+                <title>SPORT STORE | Produtos</title>
+            </Helmet>
 
         {/* Lista de produtos */}
             {produtos.length !== 0 && (

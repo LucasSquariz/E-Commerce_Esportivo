@@ -2,10 +2,6 @@ import { Card, Container } from "react-bootstrap"
 import { Helmet } from 'react-helmet-async';
 import "./sobre.scss";
 
-    <Helmet>
-        <title>SPORT STORE | Sobre Nós</title>
-    </Helmet> 
-
 const team = [
   {
     img: "https://avatars.githubusercontent.com/u/85592809?v=4",
@@ -39,7 +35,7 @@ const TeamCards = () => {
   return (
     <>
       <Helmet>
-        <title> Sobre Nós</title>
+        <title> SPORT STORE | Sobre Nós</title>
       </Helmet>
       <h1>Integrantes</h1>
       <Container fluid style={{ width: '90%', gap: '1.2rem', marginTop: '3rem' }} className="d-flex flex-wrap justify-content-center">

@@ -11,7 +11,7 @@ function Categorias() {
         <>
         {/* Nome da página */ }
         < Helmet >
-            <title>SPORT STORE | categoria</title>
+            <title>SPORT STORE | {categoria.nome ? categoria.nome : "Categoria"}</title>
         </Helmet > 
        
         {categorias.length !== 0 && (
