@@ -18,7 +18,7 @@ function Header() {
                 style={{ maxHeight: '150px' }}
                 navbarScroll
             >
-            <Nav.Link as={Link} to="/produtos">produtos</Nav.Link>            
+            <Nav.Link as={Link} to="/produtos">Produtos</Nav.Link>            
             <NavDropdown title="Categorias" id="navbarScrollingDropdown">
             <NavDropdown.Item Link as={Link} to="/produtos/categoria/1">
                 Bermudas
