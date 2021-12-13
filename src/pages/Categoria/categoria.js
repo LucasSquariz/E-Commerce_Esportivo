@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 function Categorias() {
     const {categoria} = useParams();
-    const categorias = useAxios(`/produtos/${categoria}`);       
+    const categorias = useAxios(`/produtos/categoria/${categoria}`);       
     return (
         <>
         {/* Nome da página */ 
