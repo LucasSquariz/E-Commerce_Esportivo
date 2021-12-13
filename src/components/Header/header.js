@@ -23,6 +23,17 @@ function Header() {
                 Todos os Produtos
             </NavDropdown.Item>
             </NavDropdown>
+            <NavDropdown title="Categorias" id="navbarScrollingDropdown">
+            <NavDropdown.Item Link as={Link} to="/produtos/categoria/1">
+                Bermudas
+            </NavDropdown.Item>
+            <NavDropdown.Item Link as={Link} to="/produtos/categoria/2">
+                Tênis
+            </NavDropdown.Item>
+            <NavDropdown.Item Link as={Link} to="/produtos/categoria/3">
+                Camisas
+            </NavDropdown.Item>
+            </NavDropdown>
             <Nav.Link as={Link} to="/produtos/categoria">Categorias</Nav.Link>
             <Nav.Link as={Link} to="/sobre">Sobre nós</Nav.Link>
             </Nav>
