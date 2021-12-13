@@ -14,7 +14,12 @@ function Categorias() {
             <title>SPORT STORE | categoria</title>
         </Helmet > 
 
-       
+        {/* Botões para as categorias */ }
+        <Container>            
+                <Link to={`/produtos/categoria/1`}><Button variant="primary">Bermudas</Button></Link>
+                <Link to={`/produtos/categoria/2`}><Button variant="primary">Tênis</Button></Link>
+                <Link to={`/produtos/categoria/3`}><Button variant="primary">Camisas</Button></Link>                
+        </Container>
         
         {categorias.length !== 0 && (
                 categorias.map((produto) => {

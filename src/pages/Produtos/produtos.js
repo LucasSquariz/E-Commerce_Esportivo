@@ -8,14 +8,7 @@ function Produtos() {
     const produtos = useAxios(`/produtos`);
     const navigate = useNavigate();
     return (
-        <>
-         {/* Botões para as categorias */ }
-         <Container>
-            
-                <Link to={`/produtos/categoria/1`}><Button variant="primary">Bermudas</Button></Link>
-                <Link to={`/produtos/categoria/2`}><Button variant="primary">Tênis</Button></Link>
-                <Link to={`/produtos/categoria/3`}><Button variant="primary">Camisas</Button></Link>                
-        </Container>
+        <>        
 
         {/* Lista de produtos */}
             {produtos.length !== 0 && (
