@@ -9,7 +9,7 @@ function Header() {
             <header className="sticky-top">
             <Navbar bg="light" style={{ color: "#000" }} expand="lg">   
             <Container className="head">
-            <img src="https://bit.ly/3DEhZmu" id="logo-camisa" alt="logo"/>
+            <img src="https://bit.ly/3yzfKjD" id="logo-camisa" alt="logo"/>
             <Navbar.Brand id="nome" href="/">SPORT STORE</Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
