@@ -1,7 +1,7 @@
 import useAxios from '../../hooks/useAxios';
 import { useParams } from 'react-router';
 import { Helmet } from 'react-helmet-async';
-import { Container, Button } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 function Categorias() {
