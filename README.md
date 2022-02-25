@@ -1,6 +1,6 @@
 # Projeto de e-commerce esportivo
 
-Projeto desenvolvido, durante 2 semanas, como avaliação na Digital House. O objetivo foi criar um e-commerce de roupas esportivas. O projeto foi desenvolvido com o uso de Java(back-end), React.js(Front-end) e com os seguintes requisitos:
+Projeto desenvolvido, durante 2 semanas, como avaliação na Digital House. O objetivo foi criar um e-commerce de roupas esportivas. O projeto foi desenvolvido com o uso de Java(back-end), React.js(Front-end) e com as seguintes características:
 
 ✨Header com logo e links para outras páginas. <br>
 ✨Footer com informações do projeto e logo da DH. <br>
